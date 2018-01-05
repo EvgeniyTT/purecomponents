@@ -1,0 +1,21 @@
+// import _ from 'lodash';
+
+// function component() {
+//   var element = document.createElement('div');
+
+//   // Lodash, currently included via a script, is required for this line to work
+//   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+//   return element;
+// }
+
+// document.body.appendChild(component());
+
+import Footer from './components/footer';
+
+window.addEventListener('load', function() {
+    const footer = new Footer('copyright');
+    footer.render();
+})
+
+
