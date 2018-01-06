@@ -2,11 +2,11 @@ import mustache from 'mustache';
 import template from './template.html';
 import './style.css';
 
-export default class Footer {
+export default class Header {
   constructor(dataParent){
     this.dataParent = dataParent;
     this.defaultData = {
-      copyright: 'copyright'
+      title: 'Title'
     }
   }
 

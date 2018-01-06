@@ -2,11 +2,13 @@ import mustache from 'mustache';
 import template from './template.html';
 import './style.css';
 
-export default class Footer {
+export default class SearchResult {
   constructor(dataParent){
     this.dataParent = dataParent;
     this.defaultData = {
-      copyright: 'copyright'
+      value: 'value',
+      description: 'description',
+      score: 1
     }
   }
 
@@ -15,3 +17,5 @@ export default class Footer {
     document.querySelector(`[data-parent = ${this.dataParent}]`).insertAdjacentHTML('beforeend', output);
   }
 }
+
+

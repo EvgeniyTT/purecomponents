@@ -1,21 +1,16 @@
-// import _ from 'lodash';
-
-// function component() {
-//   var element = document.createElement('div');
-
-//   // Lodash, currently included via a script, is required for this line to work
-//   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-//   return element;
-// }
-
-// document.body.appendChild(component());
-
 import Footer from './components/footer';
+import Header from './components/header';
+import Search from './components/search';
+import './style.css';
 
 window.addEventListener('load', function() {
-    const footer = new Footer('copyright');
-    footer.render();
+    const footer = new Footer('footer');
+    const header = new Header('header');
+    const search = new Search('main');
+
+    header.render();
+    search.render()
+    footer.render({ copyright: 'passed value - Copyright 2018' });
 })
 
 

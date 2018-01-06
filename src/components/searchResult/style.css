@@ -1,0 +1,11 @@
+.search-result {
+  width: 50%;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+p {
+  margin: 5px;
+}

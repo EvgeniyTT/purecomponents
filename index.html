@@ -1,9 +1,13 @@
 <html>
   <head>
-    <title>Getting Started</title>
+    <title>Components</title>
   </head>
   <body>
     <script src="./dist/bundle.js"></script>
-    <div id="app"></div>
+    <div id="app" class="app" data-parent="app">
+      <div data-parent="header"></div>
+      <div class="main" data-parent="main"></div>
+      <div data-parent="footer"></div>
+    </div>
   </body>
 </html>
